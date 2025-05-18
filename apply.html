@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply Now</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .form-container {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, select {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input:focus, select:focus {
+      border-color: #1976d2;
+      outline: none;
+    }
+
+    button {
+      padding: 12px;
+      background: #1976d2;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Internship Application Form</h2>
+    <form>
+        <label for="internship domain">Year</label>
+      <select required>
+        <option value="">-- Select Domain --</option>
+        <option >Web Development</option>
+        <option>Data Science</option>
+        <option>UI/UX Design</option>
+        <option >Mobile App Development</option>
+        <option >Cloud Computing</option>
+      </select>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="college">College Name</label>
+      <input type="text" id="college" name="college" required>
+
+      <label for="course">Course</label>
+      <input type="text" id="course" name="course" required>
+
+      <label for="year">Year</label>
+      <select id="year" name="year" required>
+        <option value="">-- Select Year --</option>
+        <option value="1st Year">1st Year</option>
+        <option value="2nd Year">2nd Year</option>
+        <option value="3rd Year">3rd Year</option>
+        <option value="4th Year">4th Year</option>
+      </select>
+
+      <label for="branch">Branch</label>
+      <input type="text" id="branch" name="branch" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
